@@ -1,0 +1,125 @@
+.app__footer {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+
+    // @media screen and (max-width: 768px) {
+    //     flex-direction: column;
+    // }
+}
+
+.app__footer-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .app__footer-card {
+        min-width: 220px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin: 2rem 0;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #fef4f5;
+
+        transition: all 0.3s ease-in-out;
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin: 0 0.7rem;
+        }
+
+        p {
+            font-weight: 500;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        &:hover {
+            // box-shadow: 0 0 25px #8b8a8a;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        // @media screen and (max-width: 450px) {
+        //     width: 100%;
+        // }
+    }
+
+    // @media screen and (max-width: 768px) {
+    //     width: 100%;
+    // }
+}
+
+.app__footer-cards .app__footer-card:last-child {
+    background-color: #f2f7fb;
+}
+
+.app__footer-cards .app__footer-card:last-child:hover {
+    // box-shadow: 0 0 25px #8a8a8a;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+// footer
+.footer-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+    background: rgba(134, 137, 237, 0.25);
+
+}
+
+.app__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer__items {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        // margin: 1rem;
+
+        li {
+            margin: 0 8px;
+            cursor: pointer;
+            flex-direction: column;
+
+            a {
+                color: #000d9b;
+                text-decoration: none;
+                flex-direction: column;
+                text-transform: capitalize;
+                font-weight: 500;
+
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+            &:hover {
+                div {
+                    background: black;
+                }
+            }
+        }
+
+        
+    }
+}
